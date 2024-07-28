@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Social from "../components/Social";
 import MobileNav from "../components/MobileNav";
-import { Link } from "react-router-dom";
+import logo from "../../src/assets/logo-transparent.png"; // Import the image
 
 const Header = () => {
   return (
     <header className="fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         <Link to={"/"} className="max-w-[200px]">
-          <img src="" alt="" />
+          <img src={logo} alt="Logo" /> {/* Use the imported image */}
         </Link>
         <nav className="hidden xl:flex gap-x-12 font-poppins font-normal">
           <Link to={"/"} className="text-[#3b444b] hover:text-black transition">
